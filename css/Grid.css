@@ -1,0 +1,153 @@
+#po_topic {
+    color: #1e2082;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.nav-tabs .nav-link {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-left:   2px solid #ccc;;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #1e2082;
+    color: white;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #1e2082;
+    color: white;
+    border-color: #1e2082;
+}
+
+.nav-tabs .nav-link.disabled {
+    color: #6c757d;
+    /* Disabled text color */
+    pointer-events: none;
+    cursor: default;
+}
+
+.tab-content p {
+    text-align: justify;
+    margin-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+    /* Adds spacing between paragraphs */
+}
+
+#style_vision_mision {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e2082;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#style_po_peo_pso {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e2082;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+li , .peo, col-sm-9{
+    text-align: justify;
+}
+
+ol li,
+ul li ,
+.peo,
+.po,
+.pso{
+    margin-bottom: 10px;
+    /* Adjust spacing as needed */
+    text-align: justify;
+
+}
+
+#p_head{
+    color : #1e2082;;
+    font-weight: bold;
+  }
+
+.vertical_nav .nav-link {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    background-color: transparent;
+    text-align: justify;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-bottom: 2px solid #ccc; /* Adds a light grey bottom border */
+    padding-bottom: 10px; /* Adjusts the space between text and the border */
+    border-right:2px solid #ccc;;
+}
+
+.vertical_nav .nav-link:hover {
+    background-color: #1e2082;
+    color: white;
+}
+
+.vertical_nav .nav-link.active {
+    background-color: #1e2082;
+    color: white;
+    border-color: #1e2082;
+}
+
+.vertical_nav .nav-link.disabled {
+    color: #6c757d;
+    /* Disabled text color */
+    pointer-events: none;
+    cursor: default;
+}
+
+.vertical_nav .dropdown-menu {
+    position: absolute;
+    /* Ensure that dropdown is positioned relative to the parent */
+    top: 0;
+    left: 100%;
+    /* Position the dropdown to the right of the parent */
+    margin-left: 0;
+    /* Ensure there is no margin gap */
+    display: none;
+    /* Initially hide the dropdown */
+}
+
+.vertical_nav .dropdown:hover .dropdown-menu {
+    display: block;
+    /* Show the dropdown when the parent is hovered */
+}
+
+.nav-item.dropdown {
+    position: relative;
+    /* Ensure the dropdown is positioned relative to the parent */
+}
+
+/* Optional: Adjust the width of the dropdown if needed */
+.vertical_nav .dropdown-menu {
+    min-width: 200px;
+}
+
+.vertical_nav .dropdown-toggle::after {
+    content: none;
+    /* Removes the arrow icon */
+}
+#readMoreButton {
+    background: none;
+    border: none;
+    color: #1e2082;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1em;
+  }
+  
+  #readMoreButton:hover {
+    color: darkblue;
+    text-decoration: none;
+  }
+  

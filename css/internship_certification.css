@@ -1,0 +1,40 @@
+.card-body ul {
+    list-style-type: none;  /* Removes default bullet points */
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left;
+    max-height: 200px; /* Set a max height for the list */
+    overflow-y: auto;  /* Enables vertical scrolling when content overflows */
+}
+
+.card-body ul li {
+    background-color: #f8f9fa; /* Light background for each list item */
+    margin: 10px 0; /* Spacing between list items */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.card-body ul li:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.card-body ul li p {
+    font-size: 18px; /* Adjust font size for better readability */
+    color: #333; /* Dark text for contrast */
+    margin-bottom: 10px; /* Spacing between text and link */
+}
+
+.card-body ul li a.btn-link {
+    color: #007bff; /* Blue color for the link button */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes the link stand out */
+}
+
+.card-body ul li a.btn-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Adds underline on hover for interactivity */
+}
