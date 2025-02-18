@@ -9,102 +9,120 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     /* Internships Section Styling */
-#internships {
-    max-width: auto;
-    margin: auto;
-    padding: 20px;
-}
+    #internships {
+      max-width: auto;
+      margin: auto;
+      padding: 15px;
+      /* Reduced padding for a more compact layout */
+    }
 
-/* Heading Container Styling */
-#internships .internships-heading {
-    text-align: center;
-    background-color: #1e2082; /* Blue background for the heading */
-    color: white; /* White text color */
-    padding: 30px 20px; /* Add some padding around the heading */
-    border-radius: 10px; /* Rounded corners for the background */
-    margin-bottom: 30px; /* Space between heading and cards */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for the heading */
-    font-family: 'Montserrat', sans-serif; /* Stylish font */
-}
+    /* Heading Container Styling */
+    #internships .internships-heading {
+      text-align: center;
+      background-color: rgb(24, 68, 107);
+      /* Blue background for the heading */
+      color: white;
+      /* White text color */
+      padding: 20px 15px;
+      /* Reduced padding around the heading */
+      border-radius: 8px;
+      /* Rounded corners for the background */
+      margin-bottom: 20px;
+      /* Reduced space between heading and cards */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* Subtle shadow for the heading */
+      font-family: 'Montserrat', sans-serif;
+      /* Stylish font */
+    }
 
-#internships .internships-heading .card-title {
-    font-size: 28px; /* Larger font size for title */
-    font-weight: bold; /* Make the title bold */
-    text-transform: uppercase; /* Uppercase for better emphasis */
-    margin-bottom: 10px;
-}
+    #internships .internships-heading .card-title {
+      font-size: 24px;
+      /* Slightly smaller title size */
+      font-weight: bold;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
 
-#internships .internships-heading .card-text {
-    font-size: 18px; /* Slightly larger font size for description */
-    font-weight: normal;
-    margin-top: 10px; /* Adds space between title and description */
-}
+    #internships .internships-heading .card-text {
+      font-size: 16px;
+      /* Slightly smaller font size for description */
+      margin-top: 5px;
+    }
 
-/* Internship Cards Grid */
-#internships .row {
-    margin-top: 20px; /* Adds spacing between the sections */
-}
+    /* Internship Cards Grid */
+    #internships .row {
+      margin-top: 10px;
+      /* Reduced space between sections */
+    }
 
-/* Individual Internship Cards Styling */
-#internships .internship-card {
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    /* Individual Internship Cards Styling */
+    #internships .internship-card {
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      /* Reduced padding inside cards */
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      /* Subtle shadow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 150px;
+      /* Reduced card height */
+      margin-bottom: 15px;
+      /* Reduced margin between cards */
+    }
 
-/* Card Hover Effects */
-#internships .internship-card:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Darker shadow */
-}
+    /* Card Hover Effects */
+    #internships .internship-card:hover {
+      transform: translateY(-5px);
+      /* Slight lift on hover */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      /* Darker shadow */
+    }
 
-/* Internship Title Styling */
-#internships .internship-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #1e2082;
-    margin-bottom: 10px;
-}
+    /* Internship Title Styling */
+    #internships .internship-title {
+      font-size: 16px;
+      /* Reduced font size */
+      font-weight: bold;
+      color: #1e2082;
+      margin-bottom: 5px;
+    }
 
-/* Internship Details Styling */
-#internships .internship-details {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 20px;
-}
+    /* Internship Details Styling */
+    #internships .internship-details {
+      font-size: 14px;
+      /* Slightly smaller font size for better compactness */
+      color: #333;
+      margin-bottom: 15px;
+    }
 
-/* Button Link Styling */
-#internships .btn-link {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
+    /* Button Link Styling */
+    #internships .btn-link {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-/* Button Link Hover Effect */
-#internships .btn-link:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
+    /* Button Link Hover Effect */
+    #internships .btn-link:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
   </style>
 
-  <link rel="stylesheet" href="/css/navbar.css">
+
 </head>
 
 <body>
-  <div class="container mt-5">
+  <div class="container-fluid">
     <!-- Internships Section -->
     <div id="internships" class="card custom-card mx-auto" style="max-width: auto;">
       <div class="card-body text-center">
         <!-- Internship Heading Outside the Card -->
         <div class="internships-heading">
           <h5 class="card-title">Industry Internships</h5>
-          <p class="card-text">Explore collaborations with top industries and read detailed reports by clicking the
-            "Read More" links.</p>
+          <p class="card-text"></p>
         </div>
 
         <!-- Internship Data Display in Grid -->

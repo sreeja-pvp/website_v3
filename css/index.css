@@ -72,8 +72,18 @@ body{
 
 .iframe-container {
     width: 100%;
-    height: 600px; /* Adjust height as needed */
-    border: none;
+   /* Adjust the max-width as needed */
+    height: 800px;
     overflow: hidden;
-    
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
