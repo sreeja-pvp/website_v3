@@ -1,11 +1,12 @@
-body {
+#utilities {
+margin-left: 20px;
+font-family: "Montserrat", sans-serif;
+margin-right: 30px;
+}
+  /*.table {
     background-color: #f8f7fd;
-  }
-  
-  .table {
-    background-color: #f8f7fd;
-    /*border: 1px solid #ccc;*/
-  }
+    /*border: 1px solid #ccc;
+  }*/
   
   .logo {
     max-width: 150px;

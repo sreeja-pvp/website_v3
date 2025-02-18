@@ -4,6 +4,7 @@
     margin-top : 20px;
     font-family: "Montserrat", sans-serif;
     color: black; /* Default font color */
+   
 }
 
 /* Ensuring all text inside #aboutNav is black by default */
@@ -11,6 +12,10 @@
 #aboutNav * {
     color: black !important; /* Override any inherited colors */
     transition: color 0.3s ease, background-color 0.3s ease;
+}
+#aboutNav #about {
+    font-size: 18px; /* Increase font size */
+    line-height: 1.6; /* Improve readability */
 }
 
 /* Tab Navigation Styling */
@@ -37,7 +42,7 @@
 #aboutNav .nav-tabs .nav-link.active {
     background-color: #1e2082;
     color: white !important;
-    border-color: #1e2082;
+    
 }
 
 /* Disabled Tabs */
@@ -63,13 +68,7 @@
     color: black; /* Default black */
 }
 
-/* Hover effect - Change text to white inside tab content */
-#aboutNav .tab-content p:hover {
-    color: white !important;
-    background-color: #1e2082; /* Optional: Background changes on hover */
-    padding: 5px;
-    border-radius: 5px;
-}
+
 
 /* Headings and Titles */
 #aboutNav #style_vision_mision,
@@ -86,7 +85,8 @@
 #aboutNav ol li,
 #aboutNav ul li,
 #aboutNav .peo,
-#aboutNav .pso {
+#aboutNav .pso 
+#aboutNav #about{
     margin-bottom: 10px;
     text-align: justify;
     color: black; /* Default black */
