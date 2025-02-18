@@ -1,176 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internship Table</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            margin: 20px;
-        }
-        .table-container-fluid {
-            max-width: 1200px;
-            margin: auto;
-           
-        }
-    </style>
 
-<link rel="stylesheet" href="/css/navbar.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Table</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Internships Section Styling */
+#internships {
+    max-width: auto;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Heading Container Styling */
+#internships .internships-heading {
+    text-align: center;
+    background-color: #1e2082; /* Blue background for the heading */
+    color: white; /* White text color */
+    padding: 30px 20px; /* Add some padding around the heading */
+    border-radius: 10px; /* Rounded corners for the background */
+    margin-bottom: 30px; /* Space between heading and cards */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for the heading */
+    font-family: 'Montserrat', sans-serif; /* Stylish font */
+}
+
+#internships .internships-heading .card-title {
+    font-size: 28px; /* Larger font size for title */
+    font-weight: bold; /* Make the title bold */
+    text-transform: uppercase; /* Uppercase for better emphasis */
+    margin-bottom: 10px;
+}
+
+#internships .internships-heading .card-text {
+    font-size: 18px; /* Slightly larger font size for description */
+    font-weight: normal;
+    margin-top: 10px; /* Adds space between title and description */
+}
+
+/* Internship Cards Grid */
+#internships .row {
+    margin-top: 20px; /* Adds spacing between the sections */
+}
+
+/* Individual Internship Cards Styling */
+#internships .internship-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover Effects */
+#internships .internship-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Darker shadow */
+}
+
+/* Internship Title Styling */
+#internships .internship-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e2082;
+    margin-bottom: 10px;
+}
+
+/* Internship Details Styling */
+#internships .internship-details {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Button Link Styling */
+#internships .btn-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Button Link Hover Effect */
+#internships .btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+  </style>
+
+  <link rel="stylesheet" href="/css/navbar.css">
 </head>
+
 <body>
-    <section id="/images/">
-        <img src="/images/Data_Science_Logo.jpeg" alt="Header Image" class="img-fluid">
-      </section>
-    
-      <section class="navSection">
-        <nav class="navbar navbar-expand-lg custom-nav">
-          <div class="container-fluid">
-            <!-- Navbar Brand -->
-            <a class="navbar-brand text-black" href="https://www.pvpsiddhartha.ac.in/">PVPSIT</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <!-- Academics -->
-                <li class="nav-item ml-3 dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Academics
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Curriculum</a></li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item dropdown-toggle" href="#">Regulations</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/pdfs/regulations/academic_regulations_20.pdf">PVP20</a></li>
-                        <li><a class="dropdown-item" href="#">PVP23</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item dropdown-toggle" href="#">Academic Calendar</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/pdfs/Academic_Calendars/PVP23_IIB.Tech-AC-2024-25.pdf">II
-                            Year</a></li>
-                        <li><a class="dropdown-item" href="/pdfs/Academic_Calendars/PVP20_IIIB.Tech-AC-2024-25.pdf">III
-                            Year</a></li>
-                        <li><a class="dropdown-item" href="#">IV Year</a></li>
-                      </ul>
-                    </li>
-                    <li><a class="dropdown-item" href="#">BOS</a></li>
-                    <li><a class="dropdown-item" href="#">Holidays</a></li>
-                  </ul>
-                </li>
-    
-                <!-- Faculty -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="facultyDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Faculty
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Teaching Staff</a></li>
-                    <li><a class="dropdown-item" href="#">Non-Teaching Staff</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Achievements</a></li>
-                  </ul>
-                </li>
-    
-                <!-- Research -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Research
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Journals</a></li>
-                    <li><a class="dropdown-item" href="#">Publications</a></li>
-                    <li><a class="dropdown-item" href="#">Projects</a></li>
-                    <li><a class="dropdown-item" href="#">Patents</a></li>
-                  </ul>
-                </li>
-    
-                <!-- Students -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="studentsDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Students
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item dropdown-toggle" href="#">Time Tables</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">II Year</a></li>
-                        <li><a class="dropdown-item" href="/pdfs/Time_Tables/III-II Time Table (Data Science).pdf">III Year</a></li>
-                        <li><a class="dropdown-item" href="#">IV Year</a></li>
-                      </ul>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Question Papers</a></li>
-                    <li><a class="dropdown-item" href="#">Mentoring List</a></li>
-                    <li><a class="dropdown-item" href="#">Publications</a></li>
-                    <li><a class="dropdown-item" href="#">Projects/Chapters</a></li>
-                    <li><a class="dropdown-item" href="#">Activities</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Higher Studies</a></li>
-                  </ul>
-                </li>
-    
-                <!-- Other Links -->
-                <li class="nav-item"><a class="nav-link" href="#">Certifications</a></li>
-                <li class="nav-item"><a class="nav-link" href="/pages/internship.html">Internships</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Results</a></li>
-    
-                <!-- Media -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Media
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Facebook</a></li>
-                    <li><a class="dropdown-item" href="#">Instagram</a></li>
-                  </ul>
-                </li>
-    
-                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-               
-              </ul>
+  <div class="container mt-5">
+    <!-- Internships Section -->
+    <div id="internships" class="card custom-card mx-auto" style="max-width: auto;">
+      <div class="card-body text-center">
+        <!-- Internship Heading Outside the Card -->
+        <div class="internships-heading">
+          <h5 class="card-title">Industry Internships</h5>
+          <p class="card-text">Explore collaborations with top industries and read detailed reports by clicking the
+            "Read More" links.</p>
+        </div>
+
+        <!-- Internship Data Display in Grid -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="internship-card">
+              <h6 class="internship-title">Data Engineering Internship</h6>
+              <p class="internship-details">28 III<sup>rd</sup> year students successfully completed during the 2024-25
+                academic year.</p>
+              <a href="path/to/pdf1.pdf" class="btn btn-link" target="_blank">Read More</a>
             </div>
           </div>
-        </nav>
-      </section>
-    <div class="table-container-fluid">
-        <h3 class="text-center mb-4" style="padding-top: 20px;">Internship Opportunities</h3>
-        <table class="table table-striped table-bordered">
-            <thead class="table-primary">
-                <tr class="text-center">
-                    <th scope="col">SNO</th>
-                    <th scope="col">Internship Info</th>
-                    <th scope="col">Details</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>28  III<sup>rd</sup> year students successfully completed the Data Engineering Internship during the 2024-25 academic year.</td>
-                    <td><a href="https://example.com/details1" class="btn btn-link">Get Details</a></td>
-                </tr>
-                <tr>
-                    
-            </tbody>
-        </table>
+          <div class="col-md-4">
+            <div class="internship-card">
+              <h6 class="internship-title">AI/ML Research Projects</h6>
+              <p class="internship-details">15 III<sup>rd</sup> year students worked on AI/ML research projects in
+                collaboration with leading tech companies.</p>
+              <a href="path/to/pdf2.pdf" class="btn btn-link" target="_blank">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="internship-card">
+              <h6 class="internship-title">Cloud Computing Certification</h6>
+              <p class="internship-details">10 students received certification in Cloud Computing from top tech
+                organizations.</p>
+              <a href="path/to/pdf3.pdf" class="btn btn-link" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Optionally add more rows for more data -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="internship-card">
+              <h6 class="internship-title">Microsoft AI Internship</h6>
+              <p class="internship-details">5 students interned at the Microsoft AI division, working on cutting-edge AI
+                projects.</p>
+              <a href="path/to/pdf4.pdf" class="btn btn-link" target="_blank">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="internship-card">
+              <h6 class="internship-title">Open-Source ML Projects</h6>
+              <p class="internship-details">3 students contributed to Open-Source ML projects to further AI development.
+              </p>
+              <a href="path/to/pdf5.pdf" class="btn btn-link" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Bootstrap JS (Optional for functionality) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+
+
+
+
+
+  <!-- Bootstrap JS (Optional for functionality) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

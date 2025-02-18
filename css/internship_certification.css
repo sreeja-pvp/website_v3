@@ -1,40 +1,68 @@
-.card-body ul {
-    list-style-type: none;  /* Removes default bullet points */
+/* Internships Card */
+#internships {
+    max-width: auto;
+    margin: auto;
+}
+
+/* Marquee Effect for List */
+#internships .marquee-container {
+    width: 100%; 
+    overflow: hidden; /* Ensures smooth scrolling */
+    white-space: nowrap; /* Keeps text in one line */
+    position: relative;
+}
+
+/* Scrolling Animation */
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#internships .marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+}
+
+/* Remove Background & Border */
+#internships .card-body ul {
+    list-style-type: none;
     padding: 0;
     margin-top: 10px;
     margin-left: 20px;
     text-align: left;
-    max-height: 250px; /* Set a max height for the list */
-    overflow-y: auto;  /* Enables vertical scrolling when content overflows */
+    max-height: auto;
+    overflow-y: hidden; /* Removes scrollbar */
 }
 
-.card-body ul li {
-    background-color: #f8f9fa; /* Light background for each list item */
-    margin: 10px 0; /* Spacing between list items */
-    padding: 15px;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+/* Remove Background & Border from List Items */
+#internships .card-body ul li {
+    background: none !important; /* No background */
+    padding: 5px 0; /* Minimal padding */
+    border: none !important; /* Removes border */
+    box-shadow: none !important; /* Removes shadow */
 }
 
-.card-body ul li:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+/* Text Styling */
+#internships .card-body ul li p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
 }
 
-.card-body ul li p {
-    font-size: 18px; /* Adjust font size for better readability */
-    color: #333; /* Dark text for contrast */
-    margin-bottom: 10px; /* Spacing between text and link */
+/* Link Styling */
+#internships .card-body ul li a.btn-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.card-body ul li a.btn-link {
-    color: #007bff; /* Blue color for the link button */
-    text-decoration: none; /* Removes underline */
-    font-weight: bold; /* Makes the link stand out */
-}
-
-.card-body ul li a.btn-link:hover {
-    color: #0056b3; /* Darker blue on hover */
-    text-decoration: underline; /* Adds underline on hover for interactivity */
+/* Link Hover Effect */
+#internships .card-body ul li a.btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
 }
