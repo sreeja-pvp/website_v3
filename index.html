@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="./css/utilities.css">
   <link rel="stylesheet" href="./css/quickLinks.css">
   <link rel="stylesheet" href="./css/internship_certification.css">
+  <link rel="stylesheet" href="./css/Grid.css">
+  <script src="/js/toggleReadMore.js"></script>
 </head>
 
 <body>
@@ -38,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="./pages/about.html">About</a></li>
+            <!--<li class="nav-item"><a class="nav-link" href="./pages/about.html">About</a></li>-->
             <!-- Academics -->
             <li class="nav-item ml-3 dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="academicsDropdown" role="button"
@@ -154,6 +156,7 @@
       </div>
     </nav>
   </section>
+  <div id="content">
   <section class="marqueeSection">
     <div class="marquee-container">
       <marquee behavior="scroll" direction="left">
@@ -211,7 +214,381 @@
       </div>
     </div>
   </div>
+  <div class="col" id="aboutNav">
+    <section id="nav-tab">
+      <ul class="nav nav-tabs justify-content-left" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button"
+            role="tab" aria-controls="about" aria-selected="true">About</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button"
+            role="tab" aria-controls="vision" aria-selected="false">Vision</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button"
+            role="tab" aria-controls="mission" aria-selected="false">Mission</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="po-tab" data-bs-toggle="tab" data-bs-target="#po" type="button" role="tab"
+            aria-controls="po" aria-selected="false">PO's</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="peo-tab" data-bs-toggle="tab" data-bs-target="#peo" type="button" role="tab"
+            aria-controls="peo" aria-selected="false">PEO's</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pso-tab" data-bs-toggle="tab" data-bs-target="#pso" type="button" role="tab"
+            aria-controls="pso" aria-selected="false">PSO's</button>
+        </li>
+      </ul>
+      <div class="tab-content custom-tab" id="myTabContent">
 
+        <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+          <p><b>B.Tech in Computer Science and Engineering (Data Science)</b> is a four-year
+            undergraduate
+            program that started
+            with an intake of 60 in 2022 and combines the study of traditional computer science with
+            the principles and
+            techniques of data science.
+          </p>
+          <p>
+            The program typically covers a broad range of topics in computer science, including data
+            structures,
+            algorithms, problem-solving techniques, programming languages, operating systems, and
+            computer networks.
+            In addition, the program may include courses on Data Science and Machine Learning (ML)
+            topics such as
+            statistical analysis, data visualization, database systems, data mining, data analytics,
+            big data technologies, machine learning algorithms, business intelligence, and more.
+          </p>
+          <p>
+            Graduates of this program may work in various industries, including technology, finance,
+            healthcare, retail, transportation, manufacturing, energy, agriculture, marketing,
+            cyber-security, government and more. Opportunities like data scientists, machine
+            learning engineers, business intelligence analysts, data engineers, software developers,
+            or other roles involve designing and implementing intelligent systems. They may also
+            pursue further studies in post-graduate programs in Data Science, AI, ML or related
+            fields.
+          </p>
+          <div id="moreContent" style="display: none;">
+            <p>
+              Some of the industries where data scientists are in high demand include:
+            <ol type="1">
+              <li><b>Technology:</b> Technology companies, such as Facebook, Apple, Amazon, Netflix,
+                Google,
+                and other top tech companies, hire data scientists to work on various projects,
+                including search algorithms, advertising systems, and recommendation engines.
+              </li>
+              <li>
+                <b>Finance:</b> Financial institutions such as banks, hedge funds, and insurance
+                companies
+                use data science to support decision-making, detect fraud, predict customer
+                behaviour and develop new financial products.
+              </li>
+              <li>
+                <b>Healthcare:</b> Data scientists in healthcare are working on areas such as
+                precision medicine, drug development, patient outcomes analysis, and medical imaging
+                analysis.
+              </li>
+              <li>
+                <b>Retail:</b> Retail companies use data science to analyze customer behaviour and
+                sales data to improve marketing and inventory management, forecast demand and
+                optimize pricing.
+              </li>
+              <li>
+                <b>Manufacturing and Automotive:</b> Companies in these industries use data science
+                for predictive maintenance, quality control and optimizing their supply chains
+              </li>
+              <li>
+                <b> Energy and utilities:</b> Companies in this field use data science to optimize
+                power generation, transmission, and distribution.
+              </li>
+              <li>
+                <b>Consulting:</b> Data Science consulting companies work with clients from diverse
+                fields, helping them to leverage data to improve their business operations and
+                strategies.
+              </li>
+              <li>
+                <b>Government and non-profit:</b>Data science is also applied in government and
+                non-profit organizations for areas like policy-making, budget allocation and public
+                welfare.
+              </li>
+              <li>
+                <b>Media and Advertising:</b> Companies in media and advertising use data science to
+                understand customer preferences and make better ad placement and targeting
+                decisions.
+              </li>
+              <li><b>Cyber security:</b> Companies and organizations that provide cyber security
+                solutions use data science techniques to protect against data breaches,
+                cyber-attacks and data theft.</li>
+            </ol>
+            </p>
+          </div>
+          <button id="readMoreButton" onclick="toggleReadMore(this)">Read More</button>
+        </div>
+        <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+          <p id="style_vision_mision">
+            To provide rich ambience for Academic and Professional Excellence, Research, <br>Employ
+            -
+            ability skills, Entrepreneurship, and Social responsibility.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+          <p id="style_vision_mision">
+            To empower the students with technical knowledge, Awareness of up-to-date technical
+            trends, Inclination for research in the areas of human needs, Capacity building for
+            Employment / Entrepreneurship, and Application of technology for societal needs.</p>
+        </div>
+        <div class="tab-pane fade" id="po" role="tabpanel" aria-labelledby="po-tab">
+
+          <div id="style_po_peo_pso">PROGRAM OUTCOMES (POs)</div>
+
+          <div class="row">
+            <div class="col-sm-1">
+              <div id="p_head">PO-1</div>
+            </div>
+            <div class="col-sm-9">
+              <div> <b>Engineering Knowledge:</b>
+                Apply the knowledge of mathematics, science, engineering
+                fundamentals, and an engineering specialization to the solution of complex
+                engineering problems.
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PO-2</div>
+              </div>
+              <div class="col-sm-9">
+                <div> <b>Problem Analysis:</b>
+                  Identify, formulate, review research literature, and analyze complex engineering
+                  problems reaching substantiated conclusions using first principles of mathematics,
+                  natural sciences and engineering sciences.
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PO-3</div>
+              </div>
+              <div class="col-sm-9">
+                <b>Design/Development of Solutions:</b>
+                Design solutions for complex engineering problems and design system components or
+                processes that meet the specified needs with appropriate consideration for the
+                public health and safety, and the cultural, societal, and environmental
+                considerations.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-1">
+              <div id="p_head">PO-4</div>
+            </div>
+            <div class="col-sm-9">
+              <b>Conduct Investigations of Complex Problems:</b>
+              Use research-based knowledge and research methods including design of experiments,
+              analysis and interpretation of data, and synthesis of the information to provide
+              valid conclusions for complexproblems:
+              <ul>
+                <li>that cannot be solved by straightforward application of knowledge,
+                  theories and techniques applicable to the engineering discipline as against
+                  problems given at the end of chapters in a typical text book that can be
+                  solved using simple engineering theories and techniques;
+                </li>
+                <li>
+                  that may not have aunique solution. Forexample, adesign problem can be
+                  solved in many ways and lead to multiple possible solutions;
+                </li>
+                <li>
+                  that require consideration of appropriate constraints / requirements not
+                  explicitly given in the problem statement such as cost, power requirement,
+                  durability, product life, etc.;
+                </li>
+                <li>
+                  which need to be defined (modeled) within appropriate mathematical
+                  framework; and
+                </li>
+                <li>
+                  that often require use of modern computational concepts and tools, for
+                  example, in the design of an antenna or a DSP filter.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="moreContent" style="display: none;">
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PO5</div>
+              </div>
+              <div class="col-sm-9">
+                <div> <b>Modern Tool Usage:</b>
+                  Create, select, and apply appropriate techniques, resources, and modern
+                  engineering and IT tools including prediction and modeling to complex engineering
+                  activities with an understanding of the limitations.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PO6</div>
+              </div>
+              <div class="col-sm-9">
+                <div> <b>The Engineer and Society: </b>
+                  Apply reasoning informed by the contextual knowledge to assess societal, health,
+                  safety, legal and cultural issues and the consequent responsibilities relevant to
+                  the professional engineering practice.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PO7</div>
+              </div>
+              <div class="col-sm-9">
+                <div> <b>Environment and Sustainability: </b>
+                  Understand the impact of the professional engineering solutions in societal and
+                  environmental contexts, and demonstrate the knowledge of, and need for sustainable
+                  development.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PO8</div>
+              </div>
+              <div class="col-sm-9">
+                <div> <b>Ethics: </b>
+                  Apply ethical principles and commit to professional ethics and responsibilities and
+                  norms of the engineering practice.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PO9</div>
+              </div>
+              <div class="col-sm-9">
+                <div> <b>Individual and Team Work: </b>
+                  Function effectively as an individual, and as a member or leader in diverse teams,
+                  and in multidisciplinary settings.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PO10</div>
+              </div>
+              <div class="col-sm-9">
+                <div> <b>Communication: </b>
+                  Communicate effectively on complex engineering activities with the engineering
+                  community and with society at large, such as, being able to comprehend and write
+                  effective reports and design documentation, make effective presentations,
+                  andgiveandreceive clear instructions.
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PO11</div>
+              </div>
+              <div class="col-sm-9">
+                <div> <b>Project Management and Finance:</b>
+                  Demonstrate knowledge and understanding of the engineering and management
+                  principles and apply these to one’s own work, as a member and leader in a team, to
+                  manage projects and in multidisciplinary environments
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-sm-1">
+                <div id="p_head">PO12</div>
+              </div>
+              <div class="col-sm-9">
+                <div> <b>Life-long Learning: </b>
+                  Recognize the need for, and have the preparation and ability to engage in
+                  independent and lifelong learning in the broadest context of technological change.
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="readMoreButton" onclick="toggleReadMore(this)">Read More</button>
+
+
+
+
+        </div>
+        <div class="tab-pane fade" id="peo" role="tabpanel" aria-labelledby="peo-tab">
+          <div id="style_po_peo_pso">PROGRAM EDUCTIONAL OUTCOMES (PEOs)</div>
+          <div class="row">
+            <div class="col-sm-1">
+              <div id="p_head">PEO-1</div>
+            </div>
+            <div class="col-sm-9 peo">
+              <div>The graduates of the program will excel in the concepts of basic engineering and advanced
+                concepts of computer science engineering.</div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-1">
+              <div id="p_head">PEO-2</div>
+            </div>
+            <div class="col-sm-9 peo">
+              <div>The graduates of the program will be professional in computing industry or pursuing higher
+                studies.</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-1">
+              <div id="p_head">PEO-3</div>
+            </div>
+            <div class="col-sm-9 peo">
+              <div>The graduates of the program will excel in team work, ethics, communication skills and contribute
+                to the benefit to the society.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="pso" role="tabpanel" aria-labelledby="pso-tab">
+          <div id="style_po_peo_pso">PROGRAM SPECIFIC OUTCOMES (PEOs)</div>
+
+          <div class="row">
+            <div class="col-sm-1">
+              <div id="p_head">PSO-1</div>
+            </div>
+            <div class="col-sm-9 pso">
+              <div>Apply the Knowledge of Computing Skills in building the Software Systems that meet the
+                requirements of Industry and Society.</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-1">
+              <div id="p_head">PSO-2</div>
+            </div>
+            <div class="col-sm-9 pso">
+              <div>Apply the Knowledge of Data Engineering and Communication Technologies for Developing
+                Applications in the Domain of Smart and Intelligent Computing.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
 
 
   <div class="container-fluid mt-5">
@@ -414,7 +791,7 @@
     </div>
   </div>
   </div>
-
+</div>
   <div class="footer">
     Quick Links
   </div>
